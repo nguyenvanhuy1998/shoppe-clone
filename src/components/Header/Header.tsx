@@ -111,23 +111,137 @@ export default function Header() {
             </div>
           </form>
           {/* Cart */}
-          <div className='col-span-1'>
-            <Link to='/'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                strokeWidth={1.5}
-                stroke='currentColor'
-                className='w-8 h-8'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  d='M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z'
-                />
-              </svg>
-            </Link>
+          <div className='col-span-1 justify-self-end '>
+            <Popover
+              initialOpen
+              renderPopover={
+                // Popover
+                <div className='bg-white relative shadow-md rounded-sm border border-gray-300 max-w-[400px] text-sm'>
+                  {/* Container */}
+                  <div className='p-2'>
+                    {/* Title */}
+                    <div className='text-gray-400 capitalize'>Sản phẩm mới thêm</div>
+                    {/* List */}
+                    <div className='mt-5'>
+                      {/* Item 1 */}
+                      <div className='mt-4 flex'>
+                        <div className='flex-shrink-0'>
+                          <img
+                            className='w-11 h-11 object-cover'
+                            src='https://cf.shopee.vn/file/sg-11134201-22110-s3ycuwtvgvjvb4_tn'
+                            alt='anh'
+                          />
+                        </div>
+                        <div className='flex-grow ml-2 overflow-hidden'>
+                          <div className='truncate'>
+                            [LIFEMCMBP2 -12% đơn 250K] Bộ Nồi Inox 3 Đáy SUNHOUSE SH334 16, 20, 24 cm
+                          </div>
+                        </div>
+                        <div className='ml-2 flex-shrink-0'>
+                          <span className='text-orange'>₫469.00</span>
+                        </div>
+                      </div>
+                      {/* Item 2 */}
+                      <div className='mt-4 flex'>
+                        <div className='flex-shrink-0'>
+                          <img
+                            className='w-11 h-11 object-cover'
+                            src='https://cf.shopee.vn/file/sg-11134201-22110-s3ycuwtvgvjvb4_tn'
+                            alt='anh'
+                          />
+                        </div>
+                        <div className='flex-grow ml-2 overflow-hidden'>
+                          <div className='truncate'>
+                            [LIFEMCMBP2 -12% đơn 250K] Bộ Nồi Inox 3 Đáy SUNHOUSE SH334 16, 20, 24 cm
+                          </div>
+                        </div>
+                        <div className='ml-2 flex-shrink-0'>
+                          <span className='text-orange'>₫469.00</span>
+                        </div>
+                      </div>
+                      {/* Item 3 */}
+                      <div className='mt-4 flex'>
+                        <div className='flex-shrink-0'>
+                          <img
+                            className='w-11 h-11 object-cover'
+                            src='https://cf.shopee.vn/file/sg-11134201-22110-s3ycuwtvgvjvb4_tn'
+                            alt='anh'
+                          />
+                        </div>
+                        <div className='flex-grow ml-2 overflow-hidden'>
+                          <div className='truncate'>
+                            [LIFEMCMBP2 -12% đơn 250K] Bộ Nồi Inox 3 Đáy SUNHOUSE SH334 16, 20, 24 cm
+                          </div>
+                        </div>
+                        <div className='ml-2 flex-shrink-0'>
+                          <span className='text-orange'>₫469.00</span>
+                        </div>
+                      </div>
+                      {/* Item 4 */}
+                      <div className='mt-4 flex'>
+                        <div className='flex-shrink-0'>
+                          <img
+                            className='w-11 h-11 object-cover'
+                            src='https://cf.shopee.vn/file/sg-11134201-22110-s3ycuwtvgvjvb4_tn'
+                            alt='anh'
+                          />
+                        </div>
+                        <div className='flex-grow ml-2 overflow-hidden'>
+                          <div className='truncate'>
+                            [LIFEMCMBP2 -12% đơn 250K] Bộ Nồi Inox 3 Đáy SUNHOUSE SH334 16, 20, 24 cm
+                          </div>
+                        </div>
+                        <div className='ml-2 flex-shrink-0'>
+                          <span className='text-orange'>₫469.00</span>
+                        </div>
+                      </div>
+                      {/* Item 5 */}
+                      <div className='mt-4 flex'>
+                        <div className='flex-shrink-0'>
+                          <img
+                            className='w-11 h-11 object-cover'
+                            src='https://cf.shopee.vn/file/sg-11134201-22110-s3ycuwtvgvjvb4_tn'
+                            alt='anh'
+                          />
+                        </div>
+                        <div className='flex-grow ml-2 overflow-hidden'>
+                          <div className='truncate'>
+                            [LIFEMCMBP2 -12% đơn 250K] Bộ Nồi Inox 3 Đáy SUNHOUSE SH334 16, 20, 24 cm
+                          </div>
+                        </div>
+                        <div className='ml-2 flex-shrink-0'>
+                          <span className='text-orange'>₫469.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Action */}
+                    <div className='flex mt-6 items-center justify-between'>
+                      <div className='capitalize text-xs text-gray-500'>Thêm hàng vào giỏ</div>
+                      <button className='capitalize bg-orange hover:bg-opacity-90 px-4 py-2 rounded-sm text-white'>
+                        Xem giỏ hàng
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              }
+            >
+              <Link to='/'>
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  strokeWidth={1.5}
+                  stroke='currentColor'
+                  className='w-8 h-8'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    d='M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z'
+                  />
+                </svg>
+              </Link>
+            </Popover>
           </div>
         </div>
       </div>
